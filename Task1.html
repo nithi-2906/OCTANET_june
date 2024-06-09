@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .header {
+            background: #004080;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-menu li {
+            margin-left: 2rem;
+        }
+
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: #0066cc;
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .btn-primary {
+            background: #ff6600;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .about, .admission, .contact {
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .about h2, .admission h2, .contact h2 {
+            margin-bottom: 1rem;
+        }
+
+        .about p, .admission p {
+            margin-bottom: 1rem;
+        }
+
+        .admission-process {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .process-step {
+            background: #fff;
+            padding: 1rem;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background: #004080;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">CollegeName</a>
+                <ul class="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#admission">Admission Process</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to CollegeName</h1>
+            <p>Your future starts here. Join us and achieve your dreams.</p>
+            <a href="#admission" class="btn-primary">Apply Now</a>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>CollegeName is a prestigious institution committed to academic excellence and holistic development of students. Our campus offers state-of-the-art facilities and a vibrant community.</p>
+        </div>
+    </section>
+    <section id="admission" class="admission">
+        <div class="container">
+            <h2>Admission Process</h2>
+            <div class="admission-process">
+                <div class="process-step">
+                    <h3>Step 1: Application</h3>
+                    <p>Submit your application online along with the required documents.</p>
+                </div>
+                <div class="process-step">
+                    <h3>Step 2: Interview</h3>
+                    <p>Attend an interview with our admissions panel.</p>
+                </div>
+                <div class="process-step">
+                    <h3>Step 3: Enrollment</h3>
+                    <p>Complete the enrollment process and join us for the new academic year.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CollegeName. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
